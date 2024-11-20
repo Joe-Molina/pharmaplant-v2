@@ -16,12 +16,13 @@ import {
 import Image from "next/image"
 import Link from "next/link"
 import { links } from "../links"
+import { Menu } from 'lucide-react';
 
 export const DrawerNav = () => {
   return (
     <Drawer>
       <DrawerTrigger asChild className="md:hidden">
-        <Button variant="outline">Menu</Button>
+        <Button variant="outline"><Menu color="black" size={48} /></Button>
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader className="flex flex-col items-center">
