@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+
 import { Share } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -17,7 +17,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ nombre, descripcion, link, img, beneficios, componentes2 }) => {
   return (
-    <div className='flex md:flex-col justify-between md:h-96 w-full md:w-64 bg-white p-3 rounded-md shadow-sm'>
+    <div className='flex md:flex-col justify-between md:h-[360px] w-full md:w-64 bg-white p-3 rounded-md shadow-sm'>
       <Image src={img} alt={nombre} width={100} height={100} className='pr-4 h-40 self-center' />
       <section className='flex flex-col h-full justify-between w-full'>
         <article className='md:border-t md:pt-2 w-full overflow-hidden'>
@@ -25,8 +25,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ nombre, descripcion, link, im
           <CarouselProduct descripcion={descripcion} beneficios={beneficios} componentes2={componentes2} />
         </article>
         <article className='flex justify-between items-end'>
-          <Link href={link} ><Button className='bg-blue-950'>Mas informacion</Button></Link>
-          <Share color="white" size={40} className='bg-blue-950 p-3 rounded-md' />
+          <Link href={link} className='bg-blue-950 text-[11px] p-2 px-4 rounded-md text-white'>Mas informacion</Link>
+          <Share color="white" size={30} className='bg-blue-950 p-2 rounded-md' />
         </article>
       </section>
     </div>

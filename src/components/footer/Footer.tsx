@@ -10,7 +10,9 @@ function Footer() {
 
       <Image src={'/logos/pharmalogo.svg'} alt={''} width={200} height={200} />
 
+
       <section className='text-neutral-700 '>® 2023. Phamaplant Casa de Representación C.A. </section>
+      <a href={'https://jodomodev.vercel.app/'} target='_blank' className='text-blue-800 text-sm hover:border-b border-blue-800'>Creado por Joe Molina - JodomoDev</a>
     </div>
   )
 }

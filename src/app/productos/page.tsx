@@ -1,9 +1,9 @@
 'use client'
 
 import React from 'react'
-import { infoProducts } from './card/info'
-import ProductCard from './card/ProductCard'
+import { infoProducts } from './info'
 import Image from 'next/image'
+import ProductCard from './card/ProductCard'
 
 function Page() {
   return (
@@ -16,7 +16,7 @@ function Page() {
       <section className='mx-2 mt-5 flex flex-wrap justify-evenly gap-5'>
         {
           infoProducts.map((product) => (
-            <ProductCard nombre={product.nombre} descripcion={product.Funcion} link={`/productos/${product.id}`} img={product.foto} key={product.id} contenido={product.descripcion} beneficios={product.beneficios} componentes2={product.componentes2} />
+            <ProductCard nombre={product.nombre} descripcion={product.Funcion} link={`/productos/${product.id}`} img={product.foto} key={product.id} beneficios={product.beneficios} componentes2={product.componentes2} />
           ))
         }
       </section>
