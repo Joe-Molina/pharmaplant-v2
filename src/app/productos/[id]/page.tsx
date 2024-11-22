@@ -3,7 +3,9 @@ import { infoProducts } from '../info'
 import Image from 'next/image'
 import { CaruselComponentes } from './components/caruselComponentes'
 
-function page({ params: { id } }: { params: { id: string } }) {
+async function page({params}) {
+
+  const {id} = await params
 
   const product = infoProducts[Number(id) - 1]
 
