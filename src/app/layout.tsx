@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral-100`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral-100 grid min-h-dvh grid-rows-[auto_1fr_auto]`}
       >
         <Nav />
         <main className="max-w-[1200px] mx-auto mt-16 md:mt-20">

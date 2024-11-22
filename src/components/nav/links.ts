@@ -11,8 +11,8 @@ export const links = [
     link: '/notisalud',
     text: 'NotiSalud'
   },
-  {
-    link: '/sobre_nosotros',
-    text: 'Sobre Nosotros'
-  },
+  // {
+  //   link: '/sobre_nosotros',
+  //   text: 'Sobre Nosotros'
+  // },
 ]
