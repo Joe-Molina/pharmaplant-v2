@@ -3,7 +3,11 @@ import { infoProducts } from '../info'
 import Image from 'next/image'
 import { CaruselComponentes } from './components/caruselComponentes'
 
-async function page({params}) {
+type Params = {
+  id: string; // Asegúrate de que el tipo sea acorde con lo que esperas, como string en este caso
+};
+
+const page: React.FC<{params: Params}> = async ({params}) => {
 
   const {id} = await params
 
