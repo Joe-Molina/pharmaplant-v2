@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral-100 grid min-h-dvh grid-rows-[auto_1fr_auto]`}
       >
         <Nav />
-        <main className="max-w-[1200px] mx-auto mt-16 md:mt-20">
+        <main className="max-w-[1200px] md:w-[1200px] mx-auto mt-16 md:mt-20">
           {children}
         </main>
         <Footer />

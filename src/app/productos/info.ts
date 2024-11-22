@@ -79,7 +79,7 @@ export const infoProducts =
         "EL CONTENIDO DEL FOCUS PROVEE 15 MG DE YODO",
         "GRAPEFRUIT (POLVO DEL FRUTO)"
       ],
-      "foto": "/potes/SIMPLANT.png"
+      "foto": "/potes/SLIMPLANT.png"
     },
     {
       "id": 3,
@@ -803,10 +803,28 @@ export const infoProducts =
     {
       "id": 26,
       "nombre": "COLLAGENO, ACIDO HIALURONICO + VITAMINA C",
-      "Funcion": "PHARMAPLANT en la constante búsqueda de productos de calidad pone a su disposición COLLEGEN, HYALURONIC ACID &VITAMIN C, un producto formulado con una combinación de principios activos que trabajan en pro del cuidado de la piel, uñas, cabello y articulaciones de nuestro cuerpo. ",
+      "Funcion": `PHARMAPLANT en la constante búsqueda de productos de calidad pone a su disposición
+COLLAGEN HYDROLYZED MULTI WITH ACID HIALURONIC, BIOTIN AND VITAMINA C,
+producto que ha sido formulado con una mezcla de ingredientes activos que mejoran la salud
+general, cumpliendo cada uno de ellos funciones corporales específicas.
+
+El colágeno es la proteína más abundante del cuerpo humano, conocida también como una
+proteína estructural que ayuda a mantener la unión en el cuerpo, por eso se le conoce como el
+“pegamento natural” del mismo, pero con el paso del tiempo y con dietas cada vez más
+deficientes, la presencia de colágeno cada vez es menor, y esto podemos notarlo en piel con
+menos brillo, cabello menos abundante, flacidez, rigidez articular. Todo esto son signos del
+envejecimiento del cuerpo humano, y aunque sea un proceso no reversible, podemos frenarlo
+un poco, consumiendo suplementos ricos en colágeno y ácido Hialurónico.
+
+Nuestro producto está creado usando péptidos de colágeno. Los péptidos de colágeno aportan
+múltiples beneficios para la salud, al ser una molécula más pequeña y de rápida absorción,
+aportan beneficios al sistema musculoesquelético, sistema cardiovascular, sistema
+inmunológico y mejoran la salud de la piel, uñas y cabello.
+
+`,
       "descripcion": [
-        "60 CÁPSULAS ",
-        "100% NATURAL "
+        "Tarro de 11,64 oz (329 gr.). Equivalente a 30 servicios por tarro.",
+
       ],
       "indicaciones": "2 CÁPSULAS AL DIA ",
       "componentes": [
@@ -814,21 +832,37 @@ export const infoProducts =
           "definicion": ": Es un polisacárido que cumple funciones de hidratación en el cuerpo humano. Es conocido ampliamente como un elemento entiedad por su capacidad de mejorar la apariencia de la piel. Dependiendo de donde se encuentre tiene diferentes funciones, en las articulaciones da soporte a las mismas y ayuda con la artrosis, en los cartílagos actúa como reconstituyente, y en la piel como hidratante y de porte para que mantenga su aspecto siempre joven. Es un elemento excelente para mejorar el aspecto de las uñas, evitando el efecto de uñas quebradizas, así como también ayuda a mejorar el aspecto del cabello, ayudando a darle brillo y evitando la caída del mismo. El ácido hialuronico con colágeno y vitamina c es una potente combinación anti edad, por lo cual es ideal siempre tomarlo combinado. ",
           "nombre": "Ácido Hialuronico",
           "foto": "/componentes/ÁcidoHialurónico.png"
+        },
+        {
+          "definicion": "Forma parte de las vitaminas del grupo B (B7) y favorece la salud de tu cabello,uñas y piel. La biotina es una parte importante de las enzimas del cuerpo que descomponen sustancias como grasas, carbohidratos y otros elementos. La biotina también ayuda con el funcionamiento cerebral, mejora la fatiga y el cansancio y ayuda a prevenir la inflación de los nervios.",
+          "nombre": "BIOTIN",
+          "foto": "/componentes/Biotin.png"
+        },
+        ,
+        {
+          "definicion": "Asiste a la síntesis y transporte de colágeno en el cuerpo. Aporta beneficios antioxidantes. La Vitamina C ayuda a destruir los compuestos que eliminan el colágeno, por lo que los dos juntos favorecen el sistema inmune al proporcionar vitaminas y proteínas a nuestro organismo. ",
+          "nombre": "VITAMINA C",
+          "foto": "/componentes/VitaminaC.png"
         }
       ],
       "beneficios": [
-        "Aumenta la elasticidad de la piel, previniendo la aparición de Líneas finas y arrugas facial",
-        "Mejora y Contribuye a cabellos y Uñas sanas y fuertes",
-        "Contribuye a la Regeneración Cartílagos, Tendones y Huesos.",
+        "Mejora la elasticidad de la piel, previniendo la aparición de Líneas finas y arrugas faciales",
+        "Mejora la apariencia de la piel seca.",
+        "Brinda soporte a las uñas, evitando uñas quebradizas y amarillentas",
+        "Brinda soporte al sistema musculoesquelético, ayudando con la Regeneración y reparación deCartílagos, Tendones y Huesos.",
+        "Mantiene encías y dientes saludables.",
         "Protege la Piel de las radiaciones UV, actuando como Antioxidante.",
-        "Colabora con la salud en general"
+        "Brinda soporte al sistema cardiovascular",
+        "Brinda soporte al sistema digestivo, ayudando a reconstituir las paredes del intestino.",
+        "Disminuye la apariencia de estrías y de la piel de naranja.",
+        "Desintoxica el hígado",
       ],
       "componentes2": [
         "COLAGENO HIDROLIZADO (FROM BOVINE CARTILAGE)",
         "ACIDO HIALURONICO ",
         "VITAMINA C"
       ],
-      "foto": "/potes/COLLEGEN HYALURONIC ACID VITAMIN C.png"
+      "foto": "/potes/COLLAGENHYDROLIZEDMULTI2.png"
     },
     {
       "id": 27,
@@ -1152,5 +1186,35 @@ export const infoProducts =
         "ALCACHOFA (POLVO DE HOJAS, TALLO Y CABEZUELAS FLORALES)"
       ],
       "foto": "/potes/CENTAL.png"
-    }
+    },
+    {
+      "id": 36,
+      "nombre": "COLLAGENO, ACIDO HIALURONICO + VITAMINA C",
+      "Funcion": "PHARMAPLANT en la constante búsqueda de productos de calidad pone a su disposición COLLEGEN, HYALURONIC ACID &VITAMIN C, un producto formulado con una combinación de principios activos que trabajan en pro del cuidado de la piel, uñas, cabello y articulaciones de nuestro cuerpo. ",
+      "descripcion": [
+        "60 CÁPSULAS ",
+        "100% NATURAL "
+      ],
+      "indicaciones": "2 CÁPSULAS AL DIA ",
+      "componentes": [
+        {
+          "definicion": ": Es un polisacárido que cumple funciones de hidratación en el cuerpo humano. Es conocido ampliamente como un elemento entiedad por su capacidad de mejorar la apariencia de la piel. Dependiendo de donde se encuentre tiene diferentes funciones, en las articulaciones da soporte a las mismas y ayuda con la artrosis, en los cartílagos actúa como reconstituyente, y en la piel como hidratante y de porte para que mantenga su aspecto siempre joven. Es un elemento excelente para mejorar el aspecto de las uñas, evitando el efecto de uñas quebradizas, así como también ayuda a mejorar el aspecto del cabello, ayudando a darle brillo y evitando la caída del mismo. El ácido hialuronico con colágeno y vitamina c es una potente combinación anti edad, por lo cual es ideal siempre tomarlo combinado. ",
+          "nombre": "Ácido Hialuronico",
+          "foto": "/componentes/ÁcidoHialurónico.png"
+        }
+      ],
+      "beneficios": [
+        "Aumenta la elasticidad de la piel, previniendo la aparición de Líneas finas y arrugas facial",
+        "Mejora y Contribuye a cabellos y Uñas sanas y fuertes",
+        "Contribuye a la Regeneración Cartílagos, Tendones y Huesos.",
+        "Protege la Piel de las radiaciones UV, actuando como Antioxidante.",
+        "Colabora con la salud en general"
+      ],
+      "componentes2": [
+        "COLAGENO HIDROLIZADO (FROM BOVINE CARTILAGE)",
+        "ACIDO HIALURONICO ",
+        "VITAMINA C"
+      ],
+      "foto": "/potes/COLLAGENHYDROLIZEDMULTIshuta.png"
+    },
   ]

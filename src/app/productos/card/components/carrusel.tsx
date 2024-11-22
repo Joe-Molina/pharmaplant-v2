@@ -11,6 +11,7 @@ import {
   // useCarousel,
 } from "@/components/ui/carousel"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import Autoplay from "embla-carousel-autoplay"
 interface CaruselProps {
   beneficios: string[]
   componentes2: string[]
@@ -18,18 +19,20 @@ interface CaruselProps {
 }
 
 export const CarouselProduct: React.FC<CaruselProps> = ({ componentes2, beneficios, descripcion }) => {
-  // const plugin = React.useRef(
-  //   Autoplay({ delay: 5000, stopOnInteraction: true })
-  // )
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, playOnInit: false, })
+  )
 
-
+  const handleCustomMouseEnter = (jump?: boolean) => {
+    plugin.current.play(jump)
+  };
 
   return (
     <Carousel
-      // plugins={[plugin.current]}
+      plugins={[plugin.current]}
       className=" md:w-full max-w-xs w-72"
-    // onMouseEnter={plugin.current.stop}
-    // onMouseLeave={plugin.current.reset}
+      onMouseEnter={() => handleCustomMouseEnter(true)}
+      onMouseLeave={plugin.current.stop}
     >
       <CarouselContent className="m-0 w-full">
 

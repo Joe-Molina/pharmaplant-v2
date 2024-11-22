@@ -19,7 +19,23 @@ export const BreadcrumbDemo: React.FC<BreadcrumbProps> = ({ nombre }) => {
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbLink href="/productos" className="text-zinc-800">{nombre}</BreadcrumbLink>
+          <BreadcrumbLink className="text-zinc-800">{nombre}</BreadcrumbLink>
+        </BreadcrumbItem>
+      </BreadcrumbList>
+    </Breadcrumb>
+  )
+}
+
+export const BreadcrumbDemo2: React.FC<BreadcrumbProps> = ({ nombre }) => {
+  return (
+    <Breadcrumb className="md:w-full self-start">
+      <BreadcrumbList>
+        <BreadcrumbItem>
+          <BreadcrumbLink href="/notisalud">NotiSalud</BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbSeparator />
+        <BreadcrumbItem>
+          <BreadcrumbLink className="text-zinc-800">{nombre}</BreadcrumbLink>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>

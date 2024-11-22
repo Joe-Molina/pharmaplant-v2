@@ -49,8 +49,8 @@ const page: React.FC<{ params: Params }> = async ({ params }) => {
 
       </div>
 
-      <div className='border w-full md:w-1/3 md:flex justify-center p-2 rounded-md  hidden'>
-        <Image src={product.foto} alt={''} width={140} height={100} />
+      <div className='border w-full md:w-1/3 md:flex justify-center items-center p-2 rounded-md  hidden'>
+        <Image src={product.foto} alt={''} width={140} height={100} className='h-72' />
       </div>
 
       <div className='md:w-2/3 md:p-3'>

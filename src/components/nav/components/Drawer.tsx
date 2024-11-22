@@ -14,11 +14,13 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer"
 import Image from "next/image"
-import Link from "next/link"
+// import Link from "next/link"
 import { links } from "../links"
 import { Menu } from 'lucide-react';
 
 export const DrawerNav = () => {
+
+
   return (
     <Drawer>
       <DrawerTrigger asChild className="md:hidden">
@@ -33,7 +35,7 @@ export const DrawerNav = () => {
         <div className="flex flex-col gap-3 w-full px-5">
           {
             links.map((link, index) => (
-              <Link key={index} href={link.link} ><Button className="w-full bg-blue-950">{link.text}</Button></Link>
+              <a key={index} href={link.link} ><Button className="w-full bg-blue-950">{link.text}</Button></a>
             ))
           }
         </div>
