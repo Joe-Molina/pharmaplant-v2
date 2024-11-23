@@ -4,11 +4,14 @@ import { BreadcrumbDemo2 } from '@/app/productos/[id]/components/Breadcrumb';
 import { articulos } from '../articulos';
 import { CarouselPote } from './components/caruselPote';
 
-type Params = {
-  id: string; // Asegúrate de que el tipo sea acorde con lo que esperas, como string en este caso
-};
+// import { Metadata } from "next";
 
-const page: React.FC<{ params: Params }> = async ({ params }) => {
+
+const Page = async ({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}) => {
 
   const { id } = await params
 
@@ -51,4 +54,4 @@ const page: React.FC<{ params: Params }> = async ({ params }) => {
   )
 }
 
-export default page
+export default Page

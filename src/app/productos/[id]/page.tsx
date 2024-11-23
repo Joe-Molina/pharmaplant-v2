@@ -4,14 +4,14 @@ import Image from 'next/image'
 import { CaruselComponentes } from './components/caruselComponentes'
 import { BreadcrumbDemo } from './components/Breadcrumb';
 
-type Params = {
-  id: string; // Asegúrate de que el tipo sea acorde con lo que esperas, como string en este caso
-};
 
-const page: React.FC<{ params: Params }> = async ({ params }) => {
+const Page = async ({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}) => {
 
   const { id } = await params
-
   const product = infoProducts[Number(id) - 1]
 
   return (
@@ -64,11 +64,11 @@ const page: React.FC<{ params: Params }> = async ({ params }) => {
 
       <div className='md:w-1/3 my-2'>
         <p className='font-bold md:text-center md:py-2'>Componentes</p>
-        <CaruselComponentes product={product.componentes} />
+        <CaruselComponentes componentes={product.componentes} />
       </div>
 
     </section>
   )
 }
 
-export default page
+export default Page

@@ -11,14 +11,20 @@ import {
 } from "@/components/ui/carousel"
 import Image from "next/image"
 
-interface ComponentsProps {
+interface ComponentesItem {
   foto: string
   nombre: string
   definicion: string
 }
 
+interface Producto {
+  componentes:
+  | ComponentesItem[] // Array de objetos válidos
+  | (ComponentesItem | undefined)[]; // Array con objetos válidos o `undefined`
+}
 
-const Component: React.FC<ComponentsProps> = ({ foto, nombre, definicion }) => {
+
+const Component: React.FC<ComponentesItem> = ({ foto, nombre, definicion }) => {
 
   const [mostrarInfo, setMostrarInfo] = React.useState(false)
 
@@ -37,13 +43,8 @@ const Component: React.FC<ComponentsProps> = ({ foto, nombre, definicion }) => {
   )
 }
 
-interface Caruselprops {
-  product: ComponentsProps[]
-}
+export const CaruselComponentes: React.FC<Producto> = ({ componentes }) => {
 
-
-
-export const CaruselComponentes: React.FC<Caruselprops> = ({ product }) => {
   return (
     <Carousel
       opts={{
@@ -53,9 +54,18 @@ export const CaruselComponentes: React.FC<Caruselprops> = ({ product }) => {
     >
       <CarouselContent className="">
         {
-          product.map((p, index) => (
+          componentes.map((p, index) => (
 
-            <Component foto={p.foto} nombre={p.nombre} definicion={p.definicion} key={index} />
+            p ? (
+              <Component
+                foto={p.foto}
+                nombre={p.nombre}
+                definicion={p.definicion}
+                key={index}
+              />
+            ) : (
+              <div key={index}>Elemento no disponible</div>
+            )
           ))
         }
 

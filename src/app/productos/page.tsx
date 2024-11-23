@@ -6,6 +6,9 @@ import Image from 'next/image'
 import ProductCard from './card/ProductCard'
 
 function Page() {
+
+  infoProducts.forEach(product => console.log(product.componentes))
+
   return (
     <div className='pt-5 md:pt-0'>
       <div className='flex justify-between items-center text-3xl  bg-blue-950 p-4 text-white font-bold mx-2 rounded-md md:mt-0 md:mx-0'>
