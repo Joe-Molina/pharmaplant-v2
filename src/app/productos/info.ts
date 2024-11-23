@@ -862,7 +862,7 @@ inmunológico y mejoran la salud de la piel, uñas y cabello.
         "ACIDO HIALURONICO ",
         "VITAMINA C"
       ],
-      "foto": "/potes/COLLAGENHYDROLIZEDMULTI2.png"
+      "foto": "/potes/collagen.png"
     },
     {
       "id": 27,
@@ -959,7 +959,7 @@ inmunológico y mejoran la salud de la piel, uñas y cabello.
         "CHONDROITIN (AS SODIUM SULFATE)",
         "MSM (METHYLSULFONYLMETHANE) (OPTI MSM)"
       ],
-      "foto": "/potes/GLUCOSAMINE CHONDROITIN _ MSM.png"
+      "foto": "/potes/GLUCOSAMINEMSM.png"
     },
     {
       "id": 30,
@@ -1002,7 +1002,7 @@ inmunológico y mejoran la salud de la piel, uñas y cabello.
         "ÁCIDO HIALURONICO (AS SODIUM HYALURONATE)",
         "MAGNESIO (AS MAGNESIUM Citrate)"
       ],
-      "foto": "/potes/GLUCOSAMINE, CHONDROINTIN _ HYALURONIC ACID.png"
+      "foto": "/potes/GLUCOSAMINE2.png"
     },
     {
       "id": 31,
@@ -1215,6 +1215,6 @@ inmunológico y mejoran la salud de la piel, uñas y cabello.
         "ACIDO HIALURONICO ",
         "VITAMINA C"
       ],
-      "foto": "/potes/COLLAGENHYDROLIZEDMULTIshuta.png"
+      "foto": "/potes/COLLAGENHYDROLIZEDMULTI.png"
     },
   ]
