@@ -36,7 +36,7 @@ const Component: React.FC<ComponentesItem> = ({ foto, nombre, definicion }) => {
       }
 
       {
-        !mostrarInfo && <CarouselItem className="basis-1/2 h-40 flex justify-center items-center p-5 flex-col" onClick={() => { setMostrarInfo(!mostrarInfo) }}><div className="h-40 w-40 border flex flex-col justify-center items-center rounded-md"><Image src={foto} alt={""} width={130} height={130} className="rounded-md p-2 w-24" /><p className="font-bold">{nombre}</p></div></CarouselItem>
+        !mostrarInfo && <CarouselItem className="basis-1/2 h-40 flex justify-center items-center p-5 flex-col" onClick={() => { setMostrarInfo(!mostrarInfo) }}><div className="h-40 w-40 border flex flex-col justify-center items-center rounded-md"><Image src={foto} alt={""} width={130} height={130} className="rounded-md p-2 w-24 max-h-28" /><p className="font-bold">{nombre}</p></div></CarouselItem>
       }
     </>
 

@@ -1,18 +1,18 @@
 export const links = [
   {
-    link: '/',
-    text: 'Inicio'
+    link: "/",
+    text: "Inicio",
   },
   {
-    link: '/productos',
-    text: 'Productos'
+    link: "/productos",
+    text: "Productos",
   },
   {
-    link: '/notisalud',
-    text: 'NotiSalud'
+    link: "/notisalud",
+    text: "NotiSalud",
   },
-  // {
-  //   link: '/sobre_nosotros',
-  //   text: 'Sobre Nosotros'
-  // },
-]
+  {
+    link: "/about",
+    text: "Sobre Nosotros",
+  },
+];

@@ -4,6 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { CarouselProduct } from './components/carrusel'
+import { toast } from 'sonner'
+import copy from 'copy-to-clipboard';
 
 interface ProductCardProps {
   nombre: string
@@ -16,6 +18,28 @@ interface ProductCardProps {
 
 
 const ProductCard: React.FC<ProductCardProps> = ({ nombre, descripcion, link, img, beneficios, componentes2 }) => {
+
+
+  async function copiarContenido() {
+    try {
+        copy(`https://pharmaplant-v2-hwid.vercel.app/productos/${link}`);
+        toast("Has copiado la direccion de este producto", {
+          description: nombre,
+        })
+    } catch (err) {
+      console.error('Error al copiar: ', err);
+      /* Rechazado - fallo al copiar el texto al portapapeles */
+    }
+  }
+
+  // const copiarContenido = () => navigator.clipboard.writeText(link).then(function() {
+  //   toast("Has copiado la direccion de este producto", {
+  //     description: nombre,
+  //   })
+  // }).catch(function(err) {
+  //   console.error('Error al copiar el texto: ', err);
+  // });
+
   return (
     <div className='flex md:flex-col justify-between md:h-[360px] w-full md:w-64 bg-white p-3 rounded-md shadow-sm hover:scale-105 transition'>
       <Image src={img} alt={nombre} width={100} height={100} className='pr-4 h-40 self-center' />
@@ -26,7 +50,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ nombre, descripcion, link, im
         </article>
         <article className='flex justify-between items-end'>
           <Link href={link} className='bg-blue-950 hover:bg-blue-900 text-[11px] p-2 px-4 rounded-md text-white'>Mas informacion</Link>
-          <Share color="white" size={30} className='bg-blue-950 hover:bg-blue-900 p-2 rounded-md' />
+          <Share color="white" size={30} className='bg-blue-950 hover:bg-blue-900 p-2 rounded-md' onClick={() => copiarContenido()}/>
         </article>
       </section>
     </div>

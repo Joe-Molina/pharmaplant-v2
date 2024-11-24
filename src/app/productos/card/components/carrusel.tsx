@@ -20,7 +20,7 @@ interface CaruselProps {
 
 export const CarouselProduct: React.FC<CaruselProps> = ({ componentes2, beneficios, descripcion }) => {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, playOnInit: false, })
+    Autoplay({ delay: 1000, playOnInit: false, })
   )
 
   const handleCustomMouseEnter = (jump?: boolean) => {
@@ -51,7 +51,7 @@ export const CarouselProduct: React.FC<CaruselProps> = ({ componentes2, benefici
 
         <CarouselItem className="p-0">
           <Card className="border-none shadow-none m-0">
-            <CardContent className="text-[11px] p-0 ">
+            <CardContent className="text-[11px] p-0 text-neutral-600">
               <p className="text-black font-bold">Componentes</p>
               {componentes2[0] && <p>* {componentes2[0].slice(0, 70).toLocaleLowerCase()}</p>}
               {componentes2[1] && <p>* {componentes2[1].slice(0, 70).toLocaleLowerCase()}</p>}
@@ -74,7 +74,7 @@ export const CarouselProduct: React.FC<CaruselProps> = ({ componentes2, benefici
 
         <CarouselItem className="p-0">
           <Card className="border-none shadow-none m-0">
-            <CardContent className="text-[11px] text-neutral-500 p-0 ">
+            <CardContent className="text-[11px] text-neutral-600 p-0 ">
               <p className="text-black font-bold">Beneficios</p>
               {beneficios[0] && <p>* {beneficios[0].slice(0, 40).toLocaleLowerCase()}</p>}
               {beneficios[1] && <p>* {beneficios[1].slice(0, 40).toLocaleLowerCase()}</p>}

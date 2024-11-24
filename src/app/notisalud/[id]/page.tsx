@@ -25,17 +25,17 @@ const Page = async ({
 
       <div className='flex flex-col md:flex-row w-full mt-5'>
         <section className='md:w-2/3'>
-          <h1 className='font-bold text-xl'>{articulo.titulo}</h1>
+          <h1 className='font-bold text-xl md:text-3xl'>{articulo.titulo}</h1>
 
           {
             articulo.articulo.map((art, index) => (
-              <p key={index} className='text-[12px] text-zinc-600'>{art}<br /><br /></p>
+              <p key={index} className='text-[12px] md:text-sm text-zinc-600'>{art}<br /><br /></p>
             ))
           }
 
           {
             articulo.datos && articulo.datos.map((art, index) => (
-              <div key={index} className='text-[12px] my-2'>
+              <div key={index} className='text-[12px] md:text-sm my-2'>
                 {art?.titulo && <p className='font-bold'>{art.titulo}</p>}
                 {art?.descripcion && <p className='text-zinc-600'>{art.descripcion}</p>}
               </div>
