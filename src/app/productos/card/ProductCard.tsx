@@ -22,10 +22,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ nombre, descripcion, link, im
 
   async function copiarContenido() {
     try {
-        copy(`https://pharmaplant-v2-hwid.vercel.app/productos/${link}`);
-        toast("Has copiado la direccion de este producto", {
-          description: nombre,
-        })
+      copy(`https://pharmaplantca.com${link}`);
+      toast("Has copiado la direccion de este producto", {
+        description: nombre,
+      })
     } catch (err) {
       console.error('Error al copiar: ', err);
       /* Rechazado - fallo al copiar el texto al portapapeles */
@@ -50,7 +50,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ nombre, descripcion, link, im
         </article>
         <article className='flex justify-between items-end'>
           <Link href={link} className='bg-blue-950 hover:bg-blue-900 text-[11px] p-2 px-4 rounded-md text-white'>Mas informacion</Link>
-          <Share color="white" size={30} className='bg-blue-950 hover:bg-blue-900 p-2 rounded-md' onClick={() => copiarContenido()}/>
+          <Share color="white" size={30} className='bg-blue-950 hover:bg-blue-900 p-2 rounded-md' onClick={() => copiarContenido()} />
         </article>
       </section>
     </div>

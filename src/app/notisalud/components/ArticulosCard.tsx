@@ -1,7 +1,9 @@
+import copy from 'copy-to-clipboard'
 import { Share } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { toast } from 'sonner'
 
 
 interface ProductCardProps {
@@ -14,6 +16,19 @@ interface ProductCardProps {
 
 
 const ArticulosCard: React.FC<ProductCardProps> = ({ titulo, foto, id, articulo }) => {
+
+  async function copiarContenido() {
+    try {
+      copy(`https://pharmaplantca.com/notisalud/${id}`);
+      toast("Has copiado la direccion de este articulo", {
+        description: titulo,
+      })
+    } catch (err) {
+      console.error('Error al copiar: ', err);
+      /* Rechazado - fallo al copiar el texto al portapapeles */
+    }
+  }
+
   return (
     <div className='flex flex-col md:h-[360px] w-full md:w-[280px] bg-white p-3 rounded-md shadow-sm hover:scale-105 transition'>
       <Image src={foto} alt={titulo} width={400} height={400} className='w-100 self-center rounded-md' />
@@ -30,7 +45,7 @@ const ArticulosCard: React.FC<ProductCardProps> = ({ titulo, foto, id, articulo 
 
         <article className='flex justify-between items-end my-2 md:my-0'>
           <Link href={`/notisalud/${id}`} className='bg-blue-950 hover:bg-blue-900 text-[11px] p-2 px-4 rounded-md text-white'>Leer Articulo</Link>
-          <Share color="white" size={30} className='bg-blue-950 hover:bg-blue-900 p-2 rounded-md' />
+          <Share color="white" size={30} className='bg-blue-950 hover:bg-blue-900 p-2 rounded-md' onClick={copiarContenido} />
         </article>
 
       </section>
