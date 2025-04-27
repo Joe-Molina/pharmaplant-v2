@@ -16,7 +16,7 @@ export function BannerCarrusel() {
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
 
-  const images = ['BannerSlimplant', 'BannerGlucosamine2', 'BannerCollagen', 'BannerCoconut', 'BannerColageno', 'BannerGlucosamine', 'BannerMagnesio',]
+  const images = ['BannerSlimplant', 'BannerGlucosamine2', 'BannerCollagen', 'BannerCoconut', 'BannerColageno', 'BannerGlucosamine', 'BannerMagnesio', 'BannerResveraplant']
 
   return (
     <Carousel
