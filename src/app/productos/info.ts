@@ -739,7 +739,7 @@ export const infoProducts = [
     nombre: "COLAGENO CON VITAMINA C",
     Funcion:
       "PHARMAPLANT en la constante búsqueda de productos de calidad, pone a su disposición COLAGENO CON VITAMINA C, un producto formulado especialmente para mejorar el aspecto de las uñas, cabello y piel, así como proporcionarle a la piel elasticidad y brillo. ",
-    descripcion: ["30 SOFGEL", "100% NATURAL "],
+    descripcion: ["60 SOFGEL", "100% NATURAL "],
     indicaciones: "2 CÁPSULAS BLANDAS CON EL DESAYUNO",
     componentes: [
       {
