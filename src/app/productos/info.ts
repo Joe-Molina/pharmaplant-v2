@@ -861,7 +861,7 @@ inmunológico y mejoran la salud de la piel, uñas y cabello.
     id: 28,
     nombre: "CITRATO DE MAGNESIO 500 MG",
     Funcion:
-      "PHARMAPLANT en la constante búsqueda de productos de calidad pone a su disposición CITRATO DE MAGNESIO 500 MG, un producto formulado especialmente para aportar energía, regular el sueño, nivelar los niveles de estrés en el cuerpo, regular el proceso enzimático en el cuerpo. ",
+      "PHARMAPLANT en la constante búsqueda de productos de calidad pone a su disposiciónn CITRATO DE MAGNESIO 500 MG, un producto formulado especialmente para aportar energía, regular el sueño, nivelar los niveles de estrés en el cuerpo, regular el proceso enzimático en el cuerpo. ",
     descripcion: ["60 CÁPSULAS ", "100% NATURAL "],
     indicaciones: "2 CÁPSULAS AL DIA ",
     componentes: [
