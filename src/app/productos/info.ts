@@ -1151,7 +1151,7 @@ inmunológico y mejoran la salud de la piel, uñas y cabello.
     componentes: [
       {
         definicion:
-          "Es un polisacárido que cumple funciones de hidratación en el cuerpo humano. Es conocido ampliamente como un elemento entiedad por su capacidad de mejorar la apariencia de la piel. Dependiendo de donde se encuentre tiene diferentes funciones, en las articulaciones da soporte a las mismas y ayuda con la artrosis, en los cartílagos actúa como reconstituyente, y en la piel como hidratante y de porte para que mantenga su aspecto siempre joven. Es un elemento excelente para mejorar el aspecto de las uñas, evitando el efecto de uñas quebradizas, así como también ayuda a mejorar el aspecto del cabello, ayudando a darle brillo y evitando la caída del mismo. El ácido hialuronico con colágeno y vitamina c es una potente combinación anti edad, por lo cual es ideal siempre tomarlo combinado. ",
+        "Es un polisacárido que cumple funciones de hidratación en el cuerpo humano. Es conocido ampliamente como un elemento entiedad por su capacidad de mejorar la apariencia de la piel. Dependiendo de donde se encuentre tiene diferentes funciones, en las articulaciones da soporte a las mismas y ayuda con la artrosis, en los cartílagos actúa como reconstituyente, y en la piel como hidratante y de porte para que mantenga su aspecto siempre joven. Es un elemento excelente para mejorar el aspecto de las uñas, evitando el efecto de uñas quebradizas, así como también ayuda a mejorar el aspecto del cabello, ayudando a darle brillo y evitando la caída del mismo. El ácido hialuronico con colágeno y vitamina c es una potente combinación anti edad, por lo cual es ideal siempre tomarlo combinado. ",
         nombre: "Ácido Hialuronico",
         foto: "/componentes/ÁcidoHialurónico.png",
       },
@@ -1170,4 +1170,68 @@ inmunológico y mejoran la salud de la piel, uñas y cabello.
     ],
     foto: "/potes/COLLAGENHYDROLIZEDMULTI.png",
   },
+  {
+  id: 37,
+  nombre: "OREGANO OIL & BLACK SEED OIL, 600MG",
+  Funcion: 
+  "PHARMAPLANT en la constante búsqueda de productos de calidad, pone a su disposición OREGANO OIL & BLACK SEED OIL, 600MG Ofrece un respaldo integral al sistema inmunológico, protege la salud respiratoria y promueve el equilibrio digestivo.",
+  descripcion: [
+    "60 CÁPSULAS SOFTGEL",
+    "100% NATURAL"
+  ],
+  indicaciones: "1 CÁPSULA BLANDA, DE 1 A 2 VECES AL DÍA, PREFERIBLEMENTE CON LAS COMIDAS.",
+  componentes: [
+    {
+      "definicion": "Componentes activos con potente acción antioxidante y antimicrobiana.",
+      "nombre": "Carvacrol, Timol y Timoquinona",
+      "foto": ""
+    }
+  ],
+  beneficios: [
+    "Potente refuerzo inmunológico: Fortalece las defensas naturales del cuerpo contra agentes externos gracias a la acción del Carvacrol, Timol y la Timoquinona.",
+    "Acción antimicrobiana natural: Ayuda a combatir infecciones virales, bacterianas y fúngicas.",
+    "Soporte a la salud respiratoria: Mantiene las vías respiratorias despejadas y ayuda a mitigar las respuestas de alergias estacionales.",
+    "Soporte digestivo e intestinal: Promueve la digestión saludable y favorece el equilibrio de la microbiota intestinal.",
+    "Efecto antioxidante y antiinflamatorio: Combate el daño provocado por los radicales libres y ayuda a reducir los procesos inflamatorios en el cuerpo.",
+    "Soporte articular y de la piel: Contribuye al bienestar de las articulaciones y favorece la salud de la piel.",
+    "Aporta vitalidad general: Promueve una sensación general de energía, salud y bienestar"
+  ],
+  componentes2: [
+    "Carvacrol",
+    "Timol",
+    "Timoquinona"
+  ],
+  foto: "/potes/OREGANO.png"
+},
+{
+  "id": 38,
+  "nombre": "GABA 500MG WITH VITAMIN B6",
+  "Funcion": "PHARMAPLANT en la constante búsqueda de productos de calidad, pone a su disposición GABA 500MG WITH VITAMIN B6 para Reducir la ansiedad, la tensión mental y favorecer un descanso profundo y reparador sin sensación de pesadez.",
+  "descripcion": [
+    "60 CÁPSULAS",
+    "100% NATURAL"
+  ],
+  "indicaciones": "1 CÁPSULA AL DÍA, PREFERIBLEMENTE CON AGUA ANTES DE DORMIR O EN MOMENTOS DE ALTA TENSIÓN MENTAL.",
+  "componentes": [
+    {
+      "definicion": "Principal neurotransmisor inhibidor del cerebro que ayuda a reducir la sobreexcitación neuronal.",
+      "nombre": "GABA (Ácido Gamma-Aminobutírico)",
+      "foto": ""
+    },
+    {
+      "definicion": "Apoya la función psicológica normal, disminuye el agotamiento mental y contribuye a la producción de melatonina y serotonina.",
+      "nombre": "Vitamina B6",
+      "foto": ""
+    }
+  ],
+  "beneficios": [
+    "Efecto relajante y antiestrés: Actúa como el principal neurotransmisor inhibidor del cerebro, ayudando a \"frenar\" la sobreexcitación neuronal, reduciendo la ansiedad y los pensamientos constantes.",
+    "Calidad del sueño y descanso reparador: Ayuda a conciliar el sueño más rápido y promueve un descanso más profundo sin causar somnolencia o pesadez al día siguiente.",
+    "Reducción de la fatiga mental: La Vitamina B6 apoya la función psicológica normal y disminuye el agotamiento mental asociado al estrés prolongado.",
+    "Apoyo a la producción natural de hormonas del bienestar: La Vitamina B6 contribuye al ciclo natural de producción de melatonina y serotonina.",
+    "Soporte al sistema nervioso central: Mantiene el equilibrio del sistema nervioso, promoviendo un estado de calma, relajación y concentración."
+  ],
+  "componentes2": ["Vitamina B6"],
+  "foto": "/potes/gaba.png"
+}
 ];
