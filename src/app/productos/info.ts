@@ -659,7 +659,7 @@ export const infoProducts = [
   },
   {
     id: 22,
-    nombre: "COLOSTTRUM 500MG",
+    nombre: "COLOSTRUM 500MG",
     Funcion:
       "PHARMAPLANT en la constante búsqueda de productos de calidad, pone a su disposición COLOSTRUM 500 mg., un producto formulado especialmente para ayudarle a fortalecer su sistema inmune y a proteger su salud en general ",
     descripcion: ["60 CÁPSULAS ", "100% NATURAL "],
